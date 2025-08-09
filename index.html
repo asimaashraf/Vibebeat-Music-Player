@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VibeBeat – Feel the Music Vibe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🧭 Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="Logo.png" alt="VibeBeat" />
+      <span>Vibe<span class="highlight">Beat</span></span>
+    </div>
+
+    <!-- 🔍 Search Bar -->
+    <div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search songs, artists..." />
+  <button id="searchBtn">Search</button>
+  <div id="searchMessage" class="search-message" aria-live="polite"></div>
+</div>
+
+
+    <!-- 🔗 Nav Links -->
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#music">Music</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="login.html" class="login-btn">Login</a></li>
+       <li><a href="contacts/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🏠 Home Section -->
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <h1>Welcome to <span class="vibe">Vibe</span><span class="beat">Beat</span></h1>
+      <p>Your daily dose of vibes, beats, and rhythms. Discover and enjoy hand-picked music tracks curated just for you.</p>
+      <a href="#musicContainer" class="btn">🎧 Explore Music</a>
+
+    </div>
+  </section>
+
+  <!-- 🎵 Music Section -->
+  <section id="music-container">
+  <h2 style="text-align:center; margin-top: 30px;">Latest Tracks</h2>
+  <div class="music-container" id="musicContainer"></div>
+  <button id="showMoreBtn" class="show-more-btn">Show More</button>
+</section>
+
+
+  <!-- (Optional) Other Sections -->
+  <!-- 📖 About Section -->
+<section id="about" class="about-section">
+  <div class="about-content">
+    <h2>About VibeBeat</h2>
+    <p>
+      VibeBeat is a free, fun, and easy-to-use music platform created for people who love sound and soul. 🎧<br><br>
+      Our mission is to bring together emerging artists and listeners by providing a beautiful place to stream, discover, and vibe to music.
+    </p>
+    <p>
+      Whether you're a passionate listener or an upcoming musician, VibeBeat gives you the tools to share your tracks, connect with others, and feel the beat.
+    </p>
+    
+  </div>
+</section>
+
+  <section id="upload"></section>
+  <section id="login"></section>
+  <!-- 📞 Contact Section -->
+
+
+<!-- Player bar -->
+
+  <!-- ...existing code... -->
+<div id="playerBar" style="display: none">
+  <input type="range" name= "range"id="seekBar" value="0" min="0" max="100" />
+  <div class="player-center">
+    <button id="prevBtn">⏮</button>
+    <button id="playPauseBtn">⏯</button>
+    <button id="nextBtn">⏭</button>
+    <span id="nowPlayingTitle">Now Playing: </span>
+    <img id="cover-img" src="" style="height: 50px; width: 50px; border-radius: 8px; display: none;" />
+    <img id="playingGif" src="Playing.gif" style="height: 60px; width: 180px; display: none;" />
+  </div>
+  <audio id="mainPlayer"></audio>
+</div>
+
+<!-- ...existing code... -->
+
+ <script src="script.js"></script>
+</body>
+</html>
